@@ -1,0 +1,578 @@
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>WOMAZING</title>
+    <meta name="description" content="Магазин женской одежды">
+    <meta name="keywords" content="стиль, мода, магазин, одежда">
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- OG Tags -->
+    <meta property="og:title" content="WOMAZING">
+    <meta property="og:description" content="Магазин женской одежды">
+    <meta property="og:type" content="article">
+    <meta property="og:img" content="http://sitename.ru/img/preview.jpg">
+    <meta property="og:site_name" content="WOMAZING">
+    <!-- Styling -->
+    <meta name="theme-color" content="#6E9C9F">
+    <link rel="apple-touch-icon" href="#">
+    <link rel="icon" type="image/png" href="#">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-reboot.min.css">
+    <!-- CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main-dist.css">
+</head>
+<body>
+<header class="header" id="header">
+    <div class="container-fluid">
+        <div class="nav">      
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-lg-3 col-sm-3 col-6 d-block align-items-center">
+                        <div class="menu-wrap d-flex">
+                            <button type="button" class="burger btn-none d-md-none">    
+                                <img src="assets/img/index/menu.png">             
+                            </button>
+                            <nav class="mob-min">
+                                <button type="button" class="btn-close Close-menu btn-close-nav" id="btn-close" aria-label="Close"></button>
+                                    <h5 class="box__title">
+                                <ul id="navigation" class="mob-min__item">
+                                    <li class="menu__item">
+                                        <a href="index.html" class="menu__link active-menu">
+                                            Главная
+                                        </a>
+                                    </li>   
+                                    <li class="menu__item">
+                                        <a href="shop.html" class="menu__link">
+                                            Магазин
+                                        </a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="about.html" class="menu__link">
+                                            О бренде
+                                        </a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="contacts.html" class="menu__link">
+                                            Контакты
+                                        </a>
+                                    </li>
+                                </ul>
+                                <a href="tel:+7(495)823-54-12" class="phone phone-min">
+                                    +7 (495) 823-54-12
+                                </a>
+                            </nav>
+                            <a href="index.html">
+                                <img src="assets/img/index/logo.png" alt="WOMAZING" class="logo d-flex align-items-center">
+                            </a>
+                        </div>                        
+                    </div>
+                    <div class="col-lg-6 col-6 d-none d-md-block">
+                        <ul class="menu d-flex">
+                            <li class="menu__item">
+                                <a href="index.html" class="menu__link active-menu">
+        							Главная
+                                </a>
+                            </li>   
+                            <li class="menu__item">
+                                <a href="shop.html" class="menu__link">
+        							Магазин
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="about.html" class="menu__link">
+        							О бренде
+        						</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="contacts.html" class="menu__link">
+        							Контакты
+        						</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-sm-3 col-6 d-flex justify-content-end align-items-center">
+                        <button type="button" class="phone-header" id="phone-header"></button>
+                        <a href="tel:+7(495)823-54-12" class="phone">
+        					+7 (495) 823-54-12
+        				</a>
+                        <button type="button" class="btn-none ml-lg-auto">
+                            <a href="basket.html" class="basket d-block">
+                                <img src="assets/img/index/Group.png" alt="basket">
+                                <span class="basket-size d-none">3</span>
+                            </a>                        
+                        </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div id="modal__wrapper" class="modal__wrapper">
+                            <div class="overlay" id="overlay"></div>
+                                <div class="box" id="box">
+                                    <button type="button" class="btn-close" id="btn-close" aria-label="Close"></button>
+                                    <h5 class="box__title">
+                                       Заказать обратный звонок
+                                    </h5>
+                                    <form action="#" class="form-head js-form" id="form-m">
+                                        <input type="text" id="name" name="name" class="form-head__input" placeholder="Имя" required>
+                                        <input type="email" id="email" name="email" class="form-head__input" placeholder="E-mail" required>
+                                        <input type="tel" id="tel" name="tel" class="form-head__input" placeholder="Телефон" required>
+                                        <button type="submit" class="btn form-head__btn" data-submit>
+                                            Заказать звонок
+                                        </button>
+                                    </form>
+                                </div>
+                        </div>
+                        <div id="modal__wrapper-ok" class="modal__wrapper-ok">
+                            <div class="overlay" id="overlay"></div>
+                            <div class="box-ok" id="box-ok">
+                                <h5 class="box-ok__title">
+                                   Отлично! Мы скоро вам перезвоним.
+                                </h5>
+                                <button type="submit" class="btn box-ok__btn " data-submit>
+                                    Закрыть
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>      
+    </div>
+    <div class="header-backgraund"></div>
+    <div class="container">
+        <div class="row">
+            <div class="sw-box">
+                <div class="swiper">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slide-inner d-lg-flex">
+                                    <div class="col-lg-7 col-12 ">
+                                        <div class="offer">
+                                             <div class="offer__title">
+                                                <h1 data-animation="fadeInLeft" data-delay=".2s">
+                                                    Новые поступления в этом сезоне
+                                                </h1>
+                                            </div>
+                                            <div class="offer__text" data-animation="fadeInLeft" data-delay=".2s">
+                                                <p>
+                                                    Утонченные сочетания и бархатные оттенки - вот то, что вы искали в этом сезоне. Время исследовать.
+                                                </p>
+                                            </div>
+                                            <div class="offer__btn d-flex" data-animation="fadeInLeft" data-delay=".2s">
+                                                <button type="button" id="btn-arrow" class="btn-arrow"></button>
+                                                <a href="shop.html" class="btn btn-op">
+                                                    Открыть магазин
+                                                </a>
+                                            </div>
+                                            <div class="offer__tabs d-flex">
+                                                <button type="button" id="offer__tab1" class="offer__tab1 of-tab"></button>
+                                                <button type="button" id="offer__tab2" class="offer__tab2 of-tab active-tab"></button>
+                                                <button type="button" id="offer__tab3"class="offer__tab3 of-tab"></buttont>
+                                            </div>
+                                        </div>                               
+                                    </div>
+                                    <div class="col-lg-5 col-12 mx-lg-auto">
+                                        <div class="header-img">
+                                            <img src="assets/img/index/slide-foto.png" alt="photo1" class="img-1 swiper-slide" data-animation="fadeInLeft" data-delay=".1s">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-inner d-lg-flex">
+                                    <div class="col-lg-7 col-12 ">
+                                        <div class="offer">
+                                            <div class="offer__title">
+                                                <h1 data-animation="fadeInLeft" data-delay=".2s">
+                                                    Что-то новенькое. Мы заждались тебя.
+                                                </h1>
+                                            </div>
+                                            <div class="offer__text" data-animation="fadeInLeft" data-delay=".2s">
+                                                <p>
+                                                    Надоело искать себя в сером городе? Настало время новых идей, свежих красок и вдохновения с Womazing!
+                                                </p>
+                                            </div>
+                                            <div class="offer__btn d-flex" data-animation="fadeInLeft" data-delay=".2s">
+                                                <button type="button" id="btn-arrow" class="btn-arrow"></button>
+                                                <a href="shop.html" class="btn btn-op">
+                                                    Открыть магазин
+                                                </a>
+                                            </div>
+                                            <div class="offer__tabs d-flex">
+                                                <button type="button" id="offer__tab1" class="offer__tab1 of-tab"></button>
+                                                <button type="button" id="offer__tab2" class="offer__tab2 of-tab active-tab"></button>
+                                                <button type="button" id="offer__tab3"class="offer__tab3 of-tab"></buttont>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 col-12 mx-lg-auto">
+                                        <div class="header-img">
+                                            <img src="assets/img/index/slide-foto.png" alt="photo1" class="img-1 swiper-slide" data-animation="fadeInLeft" data-delay=".1s">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="swiper-slide">
+                                <div class="slide-inner d-lg-flex">
+                                    <div class="col-lg-7 col-12 ">
+                                        <div class="offer">
+                                            <div class="offer__title">
+                                                <h1 data-animation="fadeInLeft" data-delay=".2s">
+                                                    Включай новый сезон с WOMAZING
+                                                </h1>
+                                            </div>
+                                            <div class="offer__text" data-animation="fadeInLeft" data-delay=".2s">
+                                                <p>
+                                                    Мы обновили ассортимент - легендарные коллекции и новинки от отечественных дизайнеров
+                                                </p>
+                                            </div>
+                                            <div class="offer__btn d-flex" data-animation="fadeInLeft" data-delay=".2s">
+                                                <button type="button" id="btn-arrow" class="btn-arrow"></button>
+                                                <a href="shop.html" class="btn btn-op">
+                                                    Открыть магазин
+                                                </a>
+                                            </div>
+                                            <div class="offer__tabs d-flex">
+                                                <button type="button" id="offer__tab1" class="offer__tab1 of-tab"></button>
+                                                <button type="button" id="offer__tab2" class="offer__tab2 of-tab active-tab"></button>
+                                                <button type="button" id="offer__tab3"class="offer__tab3 of-tab"></buttont>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 col-12 mx-lg-auto">
+                                        <div class="header-img">
+                                            <img src="assets/img/index/slide-foto.png" alt="photo1" class="img-1 swiper-slide" data-animation="fadeInLeft" data-delay=".1s">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>                                     
+                    </div>
+                </div> 
+                <div class="sw-img">
+                    <img src="assets/img/index/heder2photo.png" alt="photo1" class="img-2">
+                    <img src="assets/img/index/header3photo.png" alt="photo1" class="img-3"> 
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="collection" id="collection">
+	<div class="container">
+		<div class="section-title">
+			<h3>
+                Новая коллекция
+            </h3>
+		</div>
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="colection-wrapper d-md-flex justify-content-between">
+                    <div class="col-lg-4">
+    					<a href="oneitem.html" class="collection-elem">
+    						<div class="collection-elem__img">                 
+    							<img src="assets/img/index/tovar1.png" alt="tovar1" class="collection-elem__img">
+                                 <div class="card__overlay">    
+                            </div>
+    						</div>
+    						<div class="collection-elem__title">
+    						  	<h5>   
+                                    Футболка USA
+                                </h5>
+    						</div>
+    						<div class="collection-elem__price d-block">
+    							<span  class="collection-elem__sale">
+                                    $229
+                                </span>
+                                <span class="collection-elem__price">
+                                    $129
+                                </span>
+    						</div>
+    					</a>
+                    </div>
+                    <div class="col-lg-4">
+    					<a href="oneitem.html" class="collection-elem">
+    						<div class="collection-elem__img">
+    							<img src="assets/img/index/tovar2.png" alt="tovar1" class="collection-elem__img">
+                                 <div class="card__overlay">    
+                            </div>
+    						</div>
+    						<div class="collection-elem__title">
+    						  	<h5>
+                                    Купальник Glow
+                                </h5>
+    						</div>
+    						<div class="collection-elem__price d-block">
+    							<span>
+                                    $129
+                                </span>
+    						</div>
+    					</a>
+                    </div>
+                    <div class="col-lg-4">
+    					<a href="oneitem.html" class="collection-elem">
+    						<div class="collection-elem__img">
+    							<img src="assets/img/index/tovar3.png" alt="tovar1" class="collection-elem__img">
+                                 <div class="card__overlay">    
+                            </div>
+    						</div>
+    						<div class="collection-elem__title">
+    						  	<h5>
+                                    Свитшот Sweet Shot
+                                </h5>
+    						</div>
+    						<div class="collection-elem__price d-block">
+    							<span>
+                                    $129
+                                </span>
+    						</div>
+    					</a>
+                    </div>
+				</div>
+            </div>
+        </div>
+		<div class="row">
+			<div class="col-12">						
+				<a href="shop.html" class="collection-btn btn mx-auto">
+                    Открыть магазин
+                </a>
+			</div>
+        </div>
+    </div>
+</section>
+<section class="benefits" id="benefits">
+	<div class="container">
+		<div class="section-title">
+			<h3>
+                Что для нас важно
+            </h3>
+		</div>
+	    <div class="row">
+			<div class="col-12">
+				<div class="benefits-wrapper">
+                    <div class="col-12 d-lg-flex justify-content-between align-items-center">
+					<div class="benefits-elem">
+						<div class="benefits-elem__img">
+							<img src="assets/img/index/Frame1.png" alt="tovar1">
+						</div>
+						<div class="benefits-elem__title">
+						  	<h5>
+                                Качество
+                            </h5>
+						</div>
+						<div class="benefits-elem__text">
+							<p>
+								Наши профессионалы работают на лучшем оборудовании для пошива одежды беспрецедентного качества
+							</p>
+						</div>
+					</div>
+					<div class="benefits-elem ">
+    					<div class="benefits-elem__img">
+    						<img src="assets/img/index/Frame2.png" alt="tovar1">
+    					</div>
+    					<div class="benefits-elem__title">
+    				  	    <h5>Скорость</h5>
+    					</div>
+    					<div class="benefits-elem__text">
+    						<p>
+    							Благодаря отлаженной системе в Womazing мы можем отшивать до 20-ти единиц продукции в наших собственных цехах
+    						</p>
+    					</div>
+					</div>
+					<div class="benefits-elem ">
+						<div class="benefits-elem__img">
+							<img src="assets/img/index/Frame3.png" alt="tovar1">
+						</div>
+						<div class="benefits-elem__title">
+					  	    <h5>Ответственность</h5>
+						</div>
+						<div class="benefits-elem__text"> 
+							<p>
+								Мы заботимся о людях и планете. Безотходное производство и комфортные условия труда - все это Womazing
+							</p>
+						</div>
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="command" id="command">
+	<div class="container">
+		<div class="section-title">
+			<h3>
+                Команда мечты Womazing
+            </h3>
+		</div>
+		<div class="row justify-content-between">
+            <div class="col-md-12 col-lg-8 offset-el-1 col-12">
+				<div class="command-wrapper d-flex">					
+                    <div class="swiper swiper-galery">
+                        <div class="swiper-container">
+						    <div class="galery swiper-wrapper">
+					            <div class="gallery__img1 swiper-slide">
+							        <img src="assets/img/index/gallery1.png" data-animation="fadeInLeft" data-delay=".2s" alt="command" class="gallery__img">
+						        </div>
+    							<div class="gallery__img2 swiper-slide">
+    								<img src="assets/img/index/gallery2.png" data-animation="fadeInLeft" data-delay=".2s" alt="command" class="gallery__img">
+    							</div>
+    							<div class="gallery__img3 swiper-slide">
+    								<img src="assets/img/index/gallery3.png" data-animation="fadeInLeft" data-delay=".2s" alt="command" class="gallery__img">
+    							</div>
+    						</div>						   
+                        </div>
+                    </div>
+                    <div class="gallery-btn">
+                        <button type="button" class="btn-slide-prev"></button>
+                        <button type="button" class="btn-slide-next"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-12">
+                <div class="command-offer">
+                    <div class="command-offer__title">
+                        <h5>
+                            Для каждой
+                        </h5>
+                    </div>
+                    <div class="command-offer__text">
+                        <p>
+                            Каждая девушка уникальна. Однако, мы схожи в миллионе мелочей.
+                        </p>
+                    </div>
+                    <div class="command-offer__text">
+                        <p>
+                            Womazing ищет эти мелочи и создает прекрасные вещи, которые выгодно подчеркивают достоинства каждой девушки.
+                        </p>
+                    </div>
+                    <div class="command-offer__more">
+                        <a href="about.html" class="command-offer__more-link">
+							Подробнее о бренде
+						</a>
+                    </div>
+                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer" id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-12 col-sm-6">
+                <a href="index.html">
+                    <img src="assets/img/index/logo.png" alt="WOMAZING" class="logo logo-footer d-flex align-items-center">
+                </a>
+                <ul class="footer-list">
+                    <li class="footer-list__item">
+                        <span>
+                            © Все права защищены
+                        </span>
+                    </li>
+                    <li class="footer-list__item">
+                        <a href="#">
+                            Политика конфиденциальности
+                        </a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a href="#">
+                            Публичная оферта
+                        </a>
+                    </li>
+                </ul>
+            </div>
+             <div class="col-lg-6 col-md-6 d-md-block col-sm-6">
+                <ul class="menu menu-footer d-md-flex">
+                    <li class="menu__item menu-footer__item">
+                        <a href="index.html" class="menu__link active-menu">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="menu__item menu-footer__item">
+                        <a href="shop.html" class="menu__link">
+                            Магазин
+                        </a>
+                        <ul class="menu-shop">
+                            <li class="menu-shop__item">
+                                <a href="shop.html" class="menu-shop__link">
+                                    Пальто
+                                </a>
+                            </li>
+                            <li class="menu-shop__item">
+                                <a href="shop.html" class="menu-shop__link">
+                                    Свитшоты
+                                </a>
+                            </li>
+                            <li class="menu-shop__item">
+                                <a href="shop.html" class="menu-shop__link">
+                                    Кардиганы
+                                </a>
+                            </li>
+                            <li class="menu-shop__item">
+                                <a href="shop.html" class="menu-shop__link">
+                                    Толстовки
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__item menu-footer__item">
+                        <a href="about.html" class="menu__link">
+                            О бренде
+                        </a>
+                    </li>
+                    <li class="menu__item menu-footer__item">
+                        <a href="contacts.html" class="menu__link">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-12 col-sm-6">
+                <div class="footer-wrapper">
+                    <div class="footer-wrapper__phone">
+                        <a href="tel:+7 (495) 823-54-12" class="footer-phone">
+                            +7 (495) 823-54-12
+                        </a>
+                    </div>
+                    <!--noindex-->
+                    <a href="mailto:hello@womazing.com" rel="nofollow noopener noreferrer" target="_blank" class="footer-wrapper__mail">
+                        hello@womazing.com
+                    </a>
+                    <!--/noindex-->
+                    <div class="footer-contact d-flex justify-content-md-end justify-content-between-sm-start">
+                    <!--noindex-->
+                        <a href="https://www.instagram.com" rel="nofollow pener noreferrer" target="_blank" class="twitter">
+                            <img src="assets/img/index/instagram.png" alt="instagram">
+                        </a>
+                    <!--/noindex-->
+                    <!--noindex-->
+                        <a href="https://www.facebook.com/sai4ull" rel="nofollow noopener noreferrer" target="_blank" class="facebook">
+                            <img src="assets/img/index/facebook.png" alt="facebook">
+                        </a>
+                    <!--/noindex-->
+                    <!--noindex-->
+                        <a href="https://twitter.com" rel="nofollow noopener noreferrer" target="_blank" class="instagram">
+                            <img src="assets/img/index/twitter.png" alt="twitter">
+                        </a>
+                    <!--/noindex-->
+                    </div>
+                    <img src="assets/img/index/visa-mastercard.png" alt="cart" class="footer-cart mr-md-auto">
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</bode>
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="assets/js/jquery.validate.min.js"></script>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="assets/js/main-dist.js"></script>
+</html>

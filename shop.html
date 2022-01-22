@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>WOMAZING</title>
+    <meta name="description" content="Магазин женской одежды">
+    <meta name="keywords" content="стиль, мода, магазин, одежда">
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- OG Tags -->
+    <meta property="og:title" content="WOMAZING">
+    <meta property="og:description" content="Магазин женской одежды">
+    <meta property="og:type" content="article">
+    <meta property="og:img" content="http://sitename.ru/img/preview.jpg">
+    <meta property="og:site_name" content="WOMAZING">
+    <!-- Styling -->
+    <meta name="theme-color" content="#6E9C9F">
+    <link rel="apple-touch-icon" href="#">
+    <link rel="icon" type="image/png" href="#">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-reboot.min.css">
+    <!-- CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/shop-dist.css">
+</head>
+<body>
+<header class="header" id="header">
+    <div class="container-fluid">
+        <div class="nav">      
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-lg-3 col-sm-3 col-6 d-block align-items-center">
+                        <div class="menu-wrap d-flex">
+                            <button type="button" class="burger btn-none d-md-none">    
+                                <img src="assets/img/index/menu.png">             
+                            </button>
+                            <nav class="mob-min">
+                                <button type="button" class="btn-close Close-menu btn-close-nav" id="btn-close" aria-label="Close"></button>
+                                    <h5 class="box__title">
+                                <ul id="navigation" class="mob-min__item">
+                                    <li class="menu__item">
+                                        <a href="index.html" class="menu__link">
+                                            Главная
+                                        </a>
+                                    </li>   
+                                    <li class="menu__item">
+                                        <a href="shop.html" class="menu__link active-menu">
+                                            Магазин
+                                        </a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="about.html" class="menu__link">
+                                            О бренде
+                                        </a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="contacts.html" class="menu__link">
+                                            Контакты
+                                        </a>
+                                    </li>
+                                </ul>
+                                <a href="tel:+7(495)823-54-12" class="phone phone-min">
+                                    +7 (495) 823-54-12
+                                </a>
+                            </nav>
+                            <a href="index.html">
+                                <img src="assets/img/index/logo.png" alt="WOMAZING" class="logo d-flex align-items-center">
+                            </a>
+                        </div>                        
+                    </div>
+                    <div class="col-lg-6 col-6 d-none d-md-block">
+                        <ul class="menu d-flex">
+                            <li class="menu__item">
+                                <a href="index.html" class="menu__link">
+                                    Главная
+                                </a>
+                            </li>   
+                            <li class="menu__item">
+                                <a href="shop.html" class="menu__link active-menu">
+                                    Магазин
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="about.html" class="menu__link">
+                                    О бренде
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="contacts.html" class="menu__link">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-sm-3 col-6 d-flex justify-content-end align-items-center">
+                        <button type="button" class="phone-header" id="phone-header"></button>
+                        <a href="tel:+7(495)823-54-12" class="phone">
+                            +7 (495) 823-54-12
+                        </a>
+                        <button type="button" class="btn-none ml-lg-auto">
+                            <a href="basket.html" class="basket d-block">
+                                <img src="assets/img/index/Group.png" alt="basket">
+                                <span class="basket-size d-none">3</span>
+                            </a>                        
+                        </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div id="modal__wrapper" class="modal__wrapper">
+                            <div class="overlay" id="overlay"></div>
+                                <div class="box" id="box">
+                                    <button type="button" class="btn-close" id="btn-close" aria-label="Close"></button>
+                                    <h5 class="box__title">
+                                       Заказать обратный звонок
+                                    </h5>
+                                    <form action="#" class="form-head js-form" id="form-m">
+                                        <input type="text" id="name" name="name" class="form-head__input" placeholder="Имя" required>
+                                        <input type="email" id="email" name="email" class="form-head__input" placeholder="E-mail" required>
+                                        <input type="tel" id="tel" name="tel" class="form-head__input" placeholder="Телефон" required>
+                                        <button type="submit" class="btn form-head__btn" data-submit>
+                                            Заказать звонок
+                                        </button>
+                                    </form>
+                                </div>
+                        </div>
+                        <div id="modal__wrapper-ok" class="modal__wrapper-ok">
+                            <div class="overlay" id="overlay"></div>
+                            <div class="box-ok" id="box-ok">
+                                <h5 class="box-ok__title">
+                                   Отлично! Мы скоро вам перезвоним.
+                                </h5>
+                                <button type="submit" class="btn box-ok__btn " data-submit>
+                                    Закрыть
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>      
+    </div>
+</header>
+<main class="main" id="main">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div class="title">
+                    <h1>
+                        Магазин
+                    </h1>
+                </div>
+                <ul class="crumbs d-flex">
+                    <li class="crumbs__item">
+                        <a href="index.html" class="active">
+                            Главная
+                        </a>
+                        <span class="crumbs__el"></span>
+                    </li>
+                    <li class="crumbs__item" id="all">
+                        <a class="crumbs__link link active-crum"> 
+                            Магазин
+                        </a>
+                    </li>
+                    <li class="crumbs__item" id="coat">
+                        <a class="crumbs__link link"> 
+                            Пальто
+                        </a>
+                    </li>
+                    <li class="crumbs__item" id="sweater">
+                        <a class="crumbs__link link"> 
+                            Свитшоты
+                        </a>
+                    </li>
+                    <li class="crumbs__item" id="cardigans">
+                        <a class="crumbs__link link"> 
+                            Кардиганы
+                        </a>
+                    </li>
+                    <li class="crumbs__item" id="hoodies"> 
+                        <a class="crumbs__link link"> 
+                            Толстовки
+                        </a>
+                    </li> 
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>
+<section class="shop" id="shop">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="tabs d-md-flex">
+                    <button type="button" class="tab btn active-tab" href="#all">
+                        Все
+                    </button>
+                         <button type="button" class="tab btn" href="#coat">
+                        Пальто
+                    </button>
+                    <button type="button" class="tab btn" href="#sweater">
+                        Свитшоты
+                    </button>
+                    <button type="button" class="tab btn" href="#cardigans">
+                        Кардиганы
+                    </button>
+                    <button type="button" class="tab btn" href="#hoodies">
+                        Толстовки
+                    </button>
+                </div> 
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="goods-shown">
+                    Показано:
+                    <span>
+                        9
+                    </span>
+                    из
+                    <span>
+                        12
+                    </span>
+                    товаров
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade-show colection-active" id="all" role="tabpanel">
+            <div class="row">
+                <div class="col-12">
+                    <div class="colection-wrapper d-md-flex justify-content-between">
+                        <div class="col-lg-4">
+                            <a href="oneitem.html" class="collection-elem">
+                                <div class="collection-elem__img">                 
+                                    <img src="assets/img/index/tovar1.png" alt="tovar1" class="collection-elem__img">
+                                     <div class="card__overlay">    
+                                </div>
+                                </div>
+                                <div class="collection-elem__title">
+                                    <h5>   
+                                        Футболка USA
+                                    </h5>
+                                </div>
+                                <div class="collection-elem__price d-block">
+                                    <span  class="collection-elem__sale">
+                                        $229
+                                    </span>
+                                    <span class="collection-elem__price">
+                                        $129
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4">
+                            <a href="oneitem.html" class="collection-elem">
+                                <div class="collection-elem__img">
+                                    <img src="assets/img/index/tovar2.png" alt="tovar1" class="collection-elem__img">
+                                     <div class="card__overlay">    
+                                </div>
+                                </div>
+                                <div class="collection-elem__title">
+                                    <h5>
+                                        Купальник Glow
+                                    </h5>
+                                </div>
+                                <div class="collection-elem__price d-block">
+                                    <span>
+                                        $129
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4">
+                            <a href="oneitem.html" class="collection-elem">
+                                <div class="collection-elem__img">
+                                    <img src="assets/img/index/slide-foto.png" alt="tovar1" class="collection-elem__img">
+                                     <div class="card__overlay">    
+                                </div>
+                                </div>
+                                <div class="collection-elem__title">
+                                    <h5>
+                                        Пальто белое
+                                    </h5>
+                                </div>
+                                <div class="collection-elem__price d-block">
+                                    <span>
+                                        $2000
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="colection-wrapper d-md-flex justify-content-between">
+                        <div class="col-lg-4">
+                            <a href="oneitem.html" class="collection-elem">
+                                <div class="collection-elem__img">             
+                                    <img src="assets/img/index/tovar1.png" alt="tovar1" class="collection-elem__img">
+                                     <div class="card__overlay">    
+                                </div>
+                                </div>
+                                <div class="collection-elem__title">
+                                    <h5>   
+                                        Футболка USA
+                                    </h5>
+                                </div>
+                                <div class="collection-elem__price d-block">
+                                    <span class="collection-elem__price">
+                                        $129
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4">
+                            <a href="oneitem.html" class="collection-elem">
+                                <div class="collection-elem__img">
+                                    <img src="assets/img/index/tovar2.png" alt="tovar1" class="collection-elem__img">
+                                     <div class="card__overlay">    
+                                </div>
+                                </div>
+                                <div class="collection-elem__title">
+                                    <h5>
+                                        Купальник Glow
+                                    </h5>
+                                </div>
+                                <div class="collection-elem__price d-block">
+                                    <span>
+                                        $129
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4">
+                            <a href="oneitem.html" class="collection-elem">
+                                <div class="collection-elem__img">
+                                    <img src="assets/img/index/tovar3.png" alt="tovar1" class="collection-elem__img">
+                                     <div class="card__overlay">    
+                                </div>
+                                </div>
+                                <div class="collection-elem__title">
+                                    <h5>
+                                        Свитшот Sweet Shot
+                                    </h5>
+                                </div>
+                                <div class="collection-elem__price d-block">
+                                    <span>
+                                        $129
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="colection-wrapper d-md-flex justify-content-between">
+                        <div class="col-lg-4">
+                            <a href="oneitem.html" class="collection-elem">
+                                <div class="collection-elem__img">                    
+                                    <img src="assets/img/index/tovar1.png" alt="tovar1" class="collection-elem__img">
+                                     <div class="card__overlay">    
+                                </div>
+                                </div>
+                                <div class="collection-elem__title">
+                                    <h5>   
+                                        Футболка USA
+                                    </h5>
+                                </div>
+                                <div class="collection-elem__price d-block">
+                                    <span class="collection-elem__price">
+                                        $129
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4">
+                            <a href="oneitem.html" class="collection-elem">
+                                <div class="collection-elem__img">
+                                    <img src="assets/img/index/tovar2.png" alt="tovar1" class="collection-elem__img">
+                                     <div class="card__overlay">    
+                                </div>
+                                </div>
+                                <div class="collection-elem__title">
+                                    <h5>
+                                        Купальник Glow
+                                    </h5>
+                                </div>
+                                <div class="collection-elem__price d-block">
+                                    <span>
+                                        $129
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4">
+                            <a href="oneitem.html" class="collection-elem">
+                                <div class="collection-elem__img">
+                                    <img src="assets/img/index/tovar3.png" alt="tovar1" class="collection-elem__img">
+                                     <div class="card__overlay">    
+                                </div>
+                                </div>
+                                <div class="collection-elem__title">
+                                    <h5>
+                                        Свитшот Sweet Shot
+                                    </h5>
+                                </div>
+                                <div class="collection-elem__price d-block">
+                                    <span>
+                                        $129
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade-show" id="coat" role="tabpanel">
+            <div class="row">
+                <div class="col-12">
+                    <div class="colection-wrapper d-md-flex justify-content-between">
+                        <div class="col-lg-4">
+                            <a href="oneitem.html" class="collection-elem">
+                                <div class="collection-elem__img">
+                                    <img src="assets/img/index/slide-foto.png" alt="tovar1" class="collection-elem__img">
+                                     <div class="card__overlay">    
+                                </div>
+                                </div>
+                                <div class="collection-elem__title">
+                                    <h5>
+                                        Пальто белое
+                                    </h5>
+                                </div>
+                                <div class="collection-elem__price d-block">
+                                    <span>
+                                        $2000
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4">
+                            <a href="oneitem.html" class="collection-elem">
+                                <div class="collection-elem__img">
+                                    <img src="assets/img/index/slide-foto.png" alt="tovar1" class="collection-elem__img">
+                                     <div class="card__overlay">    
+                                </div>
+                                </div>
+                                <div class="collection-elem__title">
+                                    <h5>
+                                        Пальто беж
+                                    </h5>
+                                </div>
+                                <div class="collection-elem__price d-block">
+                                    <span>
+                                        $1200
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4">
+                            <a href="oneitem.html" class="collection-elem">
+                                <div class="collection-elem__img">
+                                    <img src="assets/img/index/slide-foto.png" alt="tovar1" class="collection-elem__img">
+                                     <div class="card__overlay">    
+                                </div>
+                                </div>
+                                <div class="collection-elem__title">
+                                    <h5>
+                                        Пальто Серое
+                                    </h5>
+                                </div>
+                                <div class="collection-elem__price d-block">
+                                    <span>
+                                        $1000
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="colection-wrapper d-md-flex justify-content-between">
+                        <div class="col-lg-4">
+                            <a href="oneitem.html" class="collection-elem">
+                                <div class="collection-elem__img">
+                                    <img src="assets/img/index/slide-foto.png" alt="tovar1" class="collection-elem__img">
+                                     <div class="card__overlay">    
+                                </div>
+                                </div>
+                                <div class="collection-elem__title">
+                                    <h5>
+                                        Пальто белое
+                                    </h5>
+                                </div>
+                                <div class="collection-elem__price d-block">
+                                    <span>
+                                        $2000
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4">
+                            <a href="oneitem.html" class="collection-elem">
+                                <div class="collection-elem__img">
+                                    <img src="assets/img/index/slide-foto.png" alt="tovar1" class="collection-elem__img">
+                                     <div class="card__overlay">    
+                                </div>
+                                </div>
+                                <div class="collection-elem__title">
+                                    <h5>
+                                        Пальто беж
+                                    </h5>
+                                </div>
+                                <div class="collection-elem__price d-block">
+                                    <span>
+                                        $1200
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4">
+                            <a href="oneitem.html" class="collection-elem">
+                                <div class="collection-elem__img">
+                                    <img src="assets/img/index/slide-foto.png" alt="tovar1" class="collection-elem__img">
+                                     <div class="card__overlay">    
+                                </div>
+                                </div>
+                                <div class="collection-elem__title">
+                                    <h5>
+                                        Пальто Серое
+                                    </h5>
+                                </div>
+                                <div class="collection-elem__price d-block">
+                                    <span>
+                                        $1000
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="colection-wrapper d-md-flex justify-content-between">
+                        <div class="col-lg-4">
+                            <a href="oneitem.html" class="collection-elem">
+                                <div class="collection-elem__img">
+                                    <img src="assets/img/index/slide-foto.png" alt="tovar1" class="collection-elem__img">
+                                     <div class="card__overlay">    
+                                </div>
+                                </div>
+                                <div class="collection-elem__title">
+                                    <h5>
+                                        Пальто белое
+                                    </h5>
+                                </div>
+                                <div class="collection-elem__price d-block">
+                                    <span>
+                                        $2000
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4">
+                            <a href="oneitem.html" class="collection-elem">
+                                <div class="collection-elem__img">
+                                    <img src="assets/img/index/slide-foto.png" alt="tovar1" class="collection-elem__img">
+                                     <div class="card__overlay">    
+                                </div>
+                                </div>
+                                <div class="collection-elem__title">
+                                    <h5>
+                                        Пальто беж
+                                    </h5>
+                                </div>
+                                <div class="collection-elem__price d-block">
+                                    <span>
+                                        $1200
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4">
+                            <a href="oneitem.html" class="collection-elem">
+                                <div class="collection-elem__img">
+                                    <img src="assets/img/index/slide-foto.png" alt="tovar1" class="collection-elem__img">
+                                     <div class="card__overlay">    
+                                </div>
+                                </div>
+                                <div class="collection-elem__title">
+                                    <h5>
+                                        Пальто Серое
+                                    </h5>
+                                </div>
+                                <div class="collection-elem__price d-block">
+                                    <span>
+                                        $1000
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="tab-pane fade-show" id="sweater" role="tabpanel">
+            <div class="row">
+                <div class="col-12">
+                    <div class="colection-wrapper d-md-flex justify-content-between">
+                        <div class="col-lg-4">
+                            <a href="oneitem.html" class="collection-elem">
+                                <div class="collection-elem__img">
+                                    <img src="assets/img/index/tovar3.png" alt="tovar1" class="collection-elem__img">
+                                     <div class="card__overlay">    
+                                </div>
+                                </div>
+                                <div class="collection-elem__title">
+                                    <h5>
+                                        Свитшот Sweet Shot
+                                    </h5>
+                                </div>
+                                <div class="collection-elem__price d-block">
+                                    <span>
+                                        $129
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4">
+                            <a href="oneitem.html" class="collection-elem">
+                                <div class="collection-elem__img">
+                                    <img src="assets/img/index/tovar3.png" alt="tovar1" class="collection-elem__img">
+                                     <div class="card__overlay">    
+                                </div>
+                                </div>
+                                <div class="collection-elem__title">
+                                    <h5>
+                                        Свитшот Shot
+                                    </h5>
+                                </div>
+                                <div class="collection-elem__price d-block">
+                                    <span>
+                                        $199
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4">
+                            <a href="oneitem.html" class="collection-elem">
+                                <div class="collection-elem__img">
+                                    <img src="assets/img/index/tovar3.png" alt="tovar1" class="collection-elem__img">
+                                     <div class="card__overlay">    
+                                </div>
+                                </div>
+                                <div class="collection-elem__title">
+                                    <h5>
+                                        Свитшот Sweet Shot
+                                    </h5>
+                                </div>
+                                <div class="collection-elem__price d-block">
+                                    <span>
+                                        $129
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="colection-wrapper d-md-flex justify-content-between">
+                        <div class="col-lg-4">
+                            <a href="oneitem.html" class="collection-elem">
+                                <div class="collection-elem__img">
+                                    <img src="assets/img/index/tovar3.png" alt="tovar1" class="collection-elem__img">
+                                     <div class="card__overlay">    
+                                </div>
+                                </div>
+                                <div class="collection-elem__title">
+                                    <h5>
+                                        Свитшот Sweet Shot
+                                    </h5>
+                                </div>
+                                <div class="collection-elem__price d-block">
+                                    <span>
+                                        $129
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4">
+                            <a href="oneitem.html" class="collection-elem">
+                                <div class="collection-elem__img">
+                                    <img src="assets/img/index/tovar3.png" alt="tovar1" class="collection-elem__img">
+                                     <div class="card__overlay">    
+                                </div>
+                                </div>
+                                <div class="collection-elem__title">
+                                    <h5>
+                                        Свитшот Shot
+                                    </h5>
+                                </div>
+                                <div class="collection-elem__price d-block">
+                                    <span>
+                                        $140
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4">
+                            <a href="oneitem.html" class="collection-elem">
+                                <div class="collection-elem__img">
+                                    <img src="assets/img/index/tovar3.png" alt="tovar1" class="collection-elem__img">
+                                     <div class="card__overlay">    
+                                </div>
+                                </div>
+                                <div class="collection-elem__title">
+                                    <h5>
+                                        Свитшот Sweet Shot
+                                    </h5>
+                                </div>
+                                <div class="collection-elem__price d-block">
+                                    <span>
+                                        $129
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="colection-wrapper d-md-flex justify-content-between">
+                        <div class="col-lg-4">
+                            <a href="oneitem.html" class="collection-elem">
+                                <div class="collection-elem__img">
+                                    <img src="assets/img/index/tovar3.png" alt="tovar1" class="collection-elem__img">
+                                     <div class="card__overlay">    
+                                </div>
+                                </div>
+                                <div class="collection-elem__title">
+                                    <h5>
+                                        Свитшот Sweet Shot
+                                    </h5>
+                                </div>
+                                <div class="collection-elem__price d-block">
+                                    <span>
+                                        $129
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4">
+                            <a href="oneitem.html" class="collection-elem">
+                                <div class="collection-elem__img">
+                                    <img src="assets/img/index/tovar3.png" alt="tovar1" class="collection-elem__img">
+                                     <div class="card__overlay">    
+                                </div>
+                                </div>
+                                <div class="collection-elem__title">
+                                    <h5>
+                                        Свитшот Shot
+                                    </h5>
+                                </div>
+                                <div class="collection-elem__price d-block">
+                                    <span>
+                                        $119
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4">
+                            <a href="oneitem.html" class="collection-elem">
+                                <div class="collection-elem__img">
+                                    <img src="assets/img/index/tovar3.png" alt="tovar1" class="collection-elem__img">
+                                     <div class="card__overlay">    
+                                </div>
+                                </div>
+                                <div class="collection-elem__title">
+                                    <h5>
+                                        Свитшот Sweet Shot
+                                    </h5>
+                                </div>
+                                <div class="collection-elem__price d-block">
+                                    <span>
+                                        $200
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade-show" id="cardigans" role="tabpanel">
+            <div class="row">
+                <div class="col-12">
+                    <div class="colection-wrapper d-md-flex justify-content-between">
+                        <div class="col-lg-4">
+                            <a href="oneitem.html" class="collection-elem">
+                                <div class="collection-elem__img">
+                                    <img src="assets/img/index/tovar2.png" alt="tovar1" class="collection-elem__img">
+                                     <div class="card__overlay">    
+                                </div>
+                                </div>
+                                <div class="collection-elem__title">
+                                    <h5>
+                                        Кардиган Git
+                                    </h5>
+                                </div>
+                                <div class="collection-elem__price d-block">
+                                    <span>
+                                        $329
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4">
+                            <a href="oneitem.html" class="collection-elem">
+                                <div class="collection-elem__img">
+                                    <img src="assets/img/index/tovar2.png" alt="tovar1" class="collection-elem__img">
+                                     <div class="card__overlay">    
+                                </div>
+                                </div>
+                                <div class="collection-elem__title">
+                                    <h5>
+                                        Кардиган Tin
+                                    </h5>
+                                </div>
+                                <div class="collection-elem__price d-block">
+                                    <span>
+                                        $229
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4">
+                            <a href="oneitem.html" class="collection-elem">
+                                <div class="collection-elem__img">
+                                    <img src="assets/img/index/tovar2.png" alt="tovar1" class="collection-elem__img">
+                                     <div class="card__overlay">    
+                                </div>
+                                </div>
+                                <div class="collection-elem__title">
+                                    <h5>
+                                        Кардиган Zol
+                                    </h5>
+                                </div>
+                                <div class="collection-elem__price d-block">
+                                    <span>
+                                        $199
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="colection-wrapper d-md-flex justify-content-between">
+                        <div class="col-lg-4">
+                            <a href="oneitem.html" class="collection-elem">
+                                <div class="collection-elem__img">
+                                    <img src="assets/img/index/tovar2.png" alt="tovar1" class="collection-elem__img">
+                                     <div class="card__overlay">    
+                                </div>
+                                </div>
+                                <div class="collection-elem__title">
+                                    <h5>
+                                        Кардиган Git
+                                    </h5>
+                                </div>
+                                <div class="collection-elem__price d-block">
+                                    <span>
+                                        $329
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4">
+                            <a href="oneitem.html" class="collection-elem">
+                                <div class="collection-elem__img">
+                                    <img src="assets/img/index/tovar2.png" alt="tovar1" class="collection-elem__img">
+                                     <div class="card__overlay">    
+                                </div>
+                                </div>
+                                <div class="collection-elem__title">
+                                    <h5>
+                                        Кардиган Tin
+                                    </h5>
+                                </div>
+                                <div class="collection-elem__price d-block">
+                                    <span>
+                                        $229
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4">
+                            <a href="oneitem.html" class="collection-elem">
+                                <div class="collection-elem__img">
+                                    <img src="assets/img/index/tovar2.png" alt="tovar1" class="collection-elem__img">
+                                     <div class="card__overlay">    
+                                </div>
+                                </div>
+                                <div class="collection-elem__title">
+                                    <h5>
+                                        Кардиган Zol
+                                    </h5>
+                                </div>
+                                <div class="collection-elem__price d-block">
+                                    <span>
+                                        $199
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="colection-wrapper d-md-flex justify-content-between">
+                        <div class="col-lg-4">
+                            <a href="oneitem.html" class="collection-elem">
+                                <div class="collection-elem__img">
+                                    <img src="assets/img/index/tovar2.png" alt="tovar1" class="collection-elem__img">
+                                     <div class="card__overlay">    
+                                </div>
+                                </div>
+                                <div class="collection-elem__title">
+                                    <h5>
+                                        Кардиган Git
+                                    </h5>
+                                </div>
+                                <div class="collection-elem__price d-block">
+                                    <span>
+                                        $329
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4">
+                            <a href="oneitem.html" class="collection-elem">
+                                <div class="collection-elem__img">
+                                    <img src="assets/img/index/tovar2.png" alt="tovar1" class="collection-elem__img">
+                                     <div class="card__overlay">    
+                                </div>
+                                </div>
+                                <div class="collection-elem__title">
+                                    <h5>
+                                        Кардиган Tin
+                                    </h5>
+                                </div>
+                                <div class="collection-elem__price d-block">
+                                    <span>
+                                        $229
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4">
+                            <a href="oneitem.html" class="collection-elem">
+                                <div class="collection-elem__img">
+                                    <img src="assets/img/index/tovar2.png" alt="tovar1" class="collection-elem__img">
+                                     <div class="card__overlay">    
+                                </div>
+                                </div>
+                                <div class="collection-elem__title">
+                                    <h5>
+                                        Кардиган Zol
+                                    </h5>
+                                </div>
+                                <div class="collection-elem__price d-block">
+                                    <span>
+                                        $199
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade-show" id="hoodies" role="tabpanel">
+            <div class="row">
+                <div class="col-12">
+                    <div class="colection-wrapper d-md-flex justify-content-between">
+                        <div class="col-lg-4">
+                            <a href="oneitem.html" class="collection-elem">
+                                <div class="collection-elem__img">                   
+                                    <img src="assets/img/index/tovar1.png" alt="tovar1" class="collection-elem__img">
+                                     <div class="card__overlay">    
+                                </div>
+                                </div>
+                                <div class="collection-elem__title">
+                                    <h5>   
+                                        Футболка
+                                    </h5>
+                                </div>
+                                <div class="collection-elem__price d-block">
+                                    <span class="collection-elem__price">
+                                        $129
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4">
+                            <a href="oneitem.html" class="collection-elem">
+                                <div class="collection-elem__img">                   
+                                    <img src="assets/img/index/tovar1.png" alt="tovar1" class="collection-elem__img">
+                                     <div class="card__overlay">    
+                                </div>
+                                </div>
+                                <div class="collection-elem__title">
+                                    <h5>   
+                                        Футболка UDI
+                                    </h5>
+                                </div>
+                                <div class="collection-elem__price d-block">
+                                    <span class="collection-elem__price">
+                                        $129
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4">
+                            <a href="oneitem.html" class="collection-elem">
+                                <div class="collection-elem__img">                   
+                                    <img src="assets/img/index/tovar1.png" alt="tovar1" class="collection-elem__img">
+                                     <div class="card__overlay">    
+                                </div>
+                                </div>
+                                <div class="collection-elem__title">
+                                    <h5>   
+                                        Футболка USA
+                                    </h5>
+                                </div>
+                                <div class="collection-elem__price d-block">
+                                    <span  class="collection-elem__sale">
+                                        $229
+                                    </span>
+                                    <span class="collection-elem__price">
+                                        $129
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="colection-wrapper d-md-flex justify-content-between">
+                        <div class="col-lg-4">
+                            <a href="oneitem.html" class="collection-elem">
+                                <div class="collection-elem__img">                   
+                                    <img src="assets/img/index/tovar1.png" alt="tovar1" class="collection-elem__img">
+                                     <div class="card__overlay">    
+                                </div>
+                                </div>
+                                <div class="collection-elem__title">
+                                    <h5>   
+                                        Футболка
+                                    </h5>
+                                </div>
+                                <div class="collection-elem__price d-block">
+                                    <span class="collection-elem__price">
+                                        $129
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4">
+                            <a href="oneitem.html" class="collection-elem">
+                                <div class="collection-elem__img">                   
+                                    <img src="assets/img/index/tovar1.png" alt="tovar1" class="collection-elem__img">
+                                     <div class="card__overlay">    
+                                </div>
+                                </div>
+                                <div class="collection-elem__title">
+                                    <h5>   
+                                        Футболка UDI
+                                    </h5>
+                                </div>
+                                <div class="collection-elem__price d-block">
+                                    <span class="collection-elem__price">
+                                        $129
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4">
+                            <a href="oneitem.html" class="collection-elem">
+                                <div class="collection-elem__img">                   
+                                    <img src="assets/img/index/tovar1.png" alt="tovar1" class="collection-elem__img">
+                                     <div class="card__overlay">    
+                                </div>
+                                </div>
+                                <div class="collection-elem__title">
+                                    <h5>   
+                                        Футболка USA
+                                    </h5>
+                                </div>
+                                <div class="collection-elem__price d-block">
+                                    <span  class="collection-elem__sale">
+                                        $229
+                                    </span>
+                                    <span class="collection-elem__price">
+                                        $129
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="colection-wrapper d-md-flex justify-content-between">
+                        <div class="col-lg-4">
+                            <a href="oneitem.html" class="collection-elem">
+                                <div class="collection-elem__img">                   
+                                    <img src="assets/img/index/tovar1.png" alt="tovar1" class="collection-elem__img">
+                                     <div class="card__overlay">    
+                                </div>
+                                </div>
+                                <div class="collection-elem__title">
+                                    <h5>   
+                                        Футболка
+                                    </h5>
+                                </div>
+                                <div class="collection-elem__price d-block">
+                                    <span class="collection-elem__price">
+                                        $129
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4">
+                            <a href="oneitem.html" class="collection-elem">
+                                <div class="collection-elem__img">                   
+                                    <img src="assets/img/index/tovar1.png" alt="tovar1" class="collection-elem__img">
+                                     <div class="card__overlay">    
+                                </div>
+                                </div>
+                                <div class="collection-elem__title">
+                                    <h5>   
+                                        Футболка UDI
+                                    </h5>
+                                </div>
+                                <div class="collection-elem__price d-block">
+                                    <span class="collection-elem__price">
+                                        $129
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4">
+                            <a href="oneitem.html" class="collection-elem">
+                                <div class="collection-elem__img">                   
+                                    <img src="assets/img/index/tovar1.png" alt="tovar1" class="collection-elem__img">
+                                     <div class="card__overlay">    
+                                </div>
+                                </div>
+                                <div class="collection-elem__title">
+                                    <h5>   
+                                        Футболка USA
+                                    </h5>
+                                </div>
+                                <div class="collection-elem__price d-block">
+                                    <span  class="collection-elem__sale">
+                                        $229
+                                    </span>
+                                    <span class="collection-elem__price">
+                                        $129
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="row">
+            <div class="col-12">
+                <div class="goods-shown">
+                    Показано:
+                    <span>
+                        9
+                    </span>
+                    из
+                    <span>
+                        12
+                    </span>
+                    товаров
+                </div>
+            </div>
+        </div> 
+        <div class="row">
+            <div class="col-12">
+                <div class="pag-tabs d-flex justify-content-center">
+                    <a class="btn active-pag-tab pag-tabs__tab d-block">
+                        1
+                    </a>
+                    <a href="page1.html" class="pag-tabs__tab btn d-block">
+                        2
+                    </a>
+                    <a href="page1.html" class="pag-arrow">
+                        <img src="assets/img/shop/pag-arrow.png">
+                    </a>
+                </div> 
+            </div>
+        </div> 
+    </div>  
+</section>
+<footer class="footer" id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-12 col-sm-6">
+                <a href="index.html">
+                    <img src="assets/img/index/logo.png" alt="WOMAZING" class="logo logo-footer d-flex align-items-center">
+                </a>
+                <ul class="footer-list">
+                    <li class="footer-list__item">
+                        <span>
+                            © Все права защищены
+                        </span>
+                    </li>
+                    <li class="footer-list__item">
+                        <a href="#">
+                            Политика конфиденциальности
+                        </a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a href="#">
+                            Публичная оферта
+                        </a>
+                    </li>
+                </ul>
+            </div>
+             <div class="col-lg-6 col-md-6 d-md-block col-sm-6">
+                <ul class="menu menu-footer d-md-flex">
+                    <li class="menu__item menu-footer__item">
+                        <a href="index.html" class="menu__link active-menu">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="menu__item menu-footer__item">
+                        <a href="shop.html" class="menu__link">
+                            Магазин
+                        </a>
+                        <ul class="menu-shop">
+                            <li class="menu-shop__item">
+                                <a href="shop.html" class="menu-shop__link">
+                                    Пальто
+                                </a>
+                            </li>
+                            <li class="menu-shop__item">
+                                <a href="shop.html" class="menu-shop__link">
+                                    Свитшоты
+                                </a>
+                            </li>
+                            <li class="menu-shop__item">
+                                <a href="shop.html" class="menu-shop__link">
+                                    Кардиганы
+                                </a>
+                            </li>
+                            <li class="menu-shop__item">
+                                <a href="shop.html" class="menu-shop__link">
+                                    Толстовки
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__item menu-footer__item">
+                        <a href="about.html" class="menu__link">
+                            О бренде
+                        </a>
+                    </li>
+                    <li class="menu__item menu-footer__item">
+                        <a href="contacts.html" class="menu__link">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-12 col-sm-6">
+                <div class="footer-wrapper">
+                    <div class="footer-wrapper__phone">
+                        <a href="tel:+7 (495) 823-54-12" class="footer-phone">
+                            +7 (495) 823-54-12
+                        </a>
+                    </div>
+                    <!--noindex-->
+                    <a href="mailto:hello@womazing.com" rel="nofollow noopener noreferrer" target="_blank" class="footer-wrapper__mail">
+                        hello@womazing.com
+                    </a>
+                    <!--/noindex-->
+                    <div class="footer-contact d-flex justify-content-md-end justify-content-between-sm-start">
+                    <!--noindex-->
+                        <a href="https://www.instagram.com" rel="nofollow pener noreferrer" target="_blank" class="twitter">
+                            <img src="assets/img/index/instagram.png" alt="instagram">
+                        </a>
+                    <!--/noindex-->
+                    <!--noindex-->
+                        <a href="https://www.facebook.com/sai4ull" rel="nofollow noopener noreferrer" target="_blank" class="facebook">
+                            <img src="assets/img/index/facebook.png" alt="facebook">
+                        </a>
+                    <!--/noindex-->
+                    <!--noindex-->
+                        <a href="https://twitter.com" rel="nofollow noopener noreferrer" target="_blank" class="instagram">
+                            <img src="assets/img/index/twitter.png" alt="twitter">
+                        </a>
+                    <!--/noindex-->
+                    </div>
+                    <img src="assets/img/index/visa-mastercard.png" alt="cart" class="footer-cart mr-md-auto">
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</bode>
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="assets/js/jquery.validate.min.js"></script>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="assets/js/main-dist.js"></script>
+</html>
